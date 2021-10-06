@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, NavLink } from "react-router-dom";
-import classes from "./Navigation.module.css";
+import classes from "./DesktopNavigation.module.css";
 
 import BurgerIcon from "../../svg/BurgerIcon";
 import HomeIcon from "../../svg/HomeIcon";
@@ -9,7 +9,7 @@ import ShoppingListIcon from "../../svg/ShoppingListIcon";
 import NewRecipeIcon from "../../svg/NewRecipeIcon";
 import SettingsIcon from "../../svg/SettingsIcon";
 
-const Navigation = () => {
+const DesktopNavigation = () => {
   return (
     <div>
       <nav className={classes.nav}>
@@ -58,4 +58,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default DesktopNavigation;

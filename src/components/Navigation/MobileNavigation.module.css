@@ -1,0 +1,28 @@
+.mobile-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: aliceblue;
+  height: 60px;
+  padding: 0.8em;
+  font-size: 0.6rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  color: #5a5a5a;
+  height: 100%;
+}
+
+.link:hover,
+.link:focus {
+  color: salmon;
+}

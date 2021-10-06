@@ -5,18 +5,9 @@
   bottom: 0;
   left: 0;
   background-color: #f7fafc;
-  /* padding-top: 5em; */
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: inherit;
-  padding: 1em;
 }
 
 .nav-list {
@@ -30,8 +21,15 @@
 
 .nav-list li {
   color: #5a5a5a;
-
   cursor: pointer;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  padding: 1em;
 }
 
 .nav-list .burger {
