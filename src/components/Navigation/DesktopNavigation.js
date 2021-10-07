@@ -1,8 +1,9 @@
 import React from "react";
+import logo from "../../assets/salad.png";
 import { Route, NavLink } from "react-router-dom";
 import classes from "./DesktopNavigation.module.css";
 
-import BurgerIcon from "../../svg/BurgerIcon";
+import ChevronLeft from "../../svg/ChevronLeft";
 import HomeIcon from "../../svg/HomeIcon";
 import PlannerIcon from "../../svg/PlannerIcon";
 import ShoppingListIcon from "../../svg/ShoppingListIcon";
@@ -14,11 +15,13 @@ const DesktopNavigation = () => {
     <div>
       <nav className={classes.nav}>
         <ul className={classes["nav-list"]}>
-          <div>
-            <li className={classes.burger}>
-              <BurgerIcon />
-            </li>
-          </div>
+          <li className={classes["top-nav"]}>
+            <NavLink className={classes["top-nav-link"]} to='/recipes'>
+              <img src={logo} alt='logo' />
+              <span className={classes["logo-text"]}>Ché Shpend</span>
+            </NavLink>
+          </li>
+
           <li className={classes["nav-item"]}>
             <NavLink className={classes.link} to='recipes'>
               <HomeIcon />
@@ -46,10 +49,11 @@ const DesktopNavigation = () => {
         </ul>
 
         <ul className={classes["nav-list"]}>
-          <li className={classes["nav-item"]}>
+          <li className={classes.settings}>
             <NavLink className={classes.link} to='settings'>
               <SettingsIcon />
               <span>Settings</span>
+              {/* <ChevronLeft /> */}
             </NavLink>
           </li>
         </ul>

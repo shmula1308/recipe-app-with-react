@@ -3,26 +3,32 @@
   left: 0;
   right: 0;
   bottom: 0;
-  display: flex;
+  display: none;
   justify-content: space-around;
   align-items: center;
-  background-color: aliceblue;
   height: 60px;
-  padding: 0.8em;
+  /* padding: 0.8em; */
   font-size: 0.6rem;
+  background-color: #051e34;
+  color: #dde0e3;
 }
 
 .link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   text-decoration: none;
-  color: #5a5a5a;
+  color: inherit;
   height: 100%;
+  width: 100%;
+}
+
+.link span {
+  margin-top: 5px;
 }
 
 .link:hover,
 .link:focus {
-  color: salmon;
+  background-color: rgba(71, 98, 130, 0.4);
 }

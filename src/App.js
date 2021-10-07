@@ -6,14 +6,14 @@ import Planner from "./pages/Planner";
 import ShoppingList from "./pages/ShoppingList";
 import NewRecipe from "./pages/NewRecipe";
 import Settings from "./pages/Settings";
-import "./App.module.css";
+import classes from "./App.module.css";
 
 function App() {
   return (
     <div className='app'>
       <DesktopNavigation />
       <MobileNavigation />
-      <main>
+      <main className={classes.main}>
         <Route path='/recipes'>
           <Recipes />
         </Route>

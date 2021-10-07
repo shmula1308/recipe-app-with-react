@@ -1,13 +1,36 @@
+img {
+  max-width: 100%;
+  width: 30px;
+}
+
+.top-nav {
+  padding: 1em;
+  border-bottom: 1px solid #304557;
+  margin-bottom: 4em;
+}
+
+.top-nav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+}
 .nav {
   position: fixed;
-  width: 250px;
+  width: 256px;
   top: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #f7fafc;
-  display: none;
+  height: 100vh;
+  background-color: #051e34;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-attachment: fixed;
+  background-image: url("../../assets/nav_nachos@2x.png");
+  background-repeat: no-repeat;
+  background-position: left 0 bottom 0;
+  background-size: 256px 556px;
+  color: #dde0e3;
 }
 
 .nav-list {
@@ -19,11 +42,6 @@
   justify-content: space-between;
 }
 
-.nav-list li {
-  color: #5a5a5a;
-  cursor: pointer;
-}
-
 .link {
   display: flex;
   align-items: center;
@@ -32,15 +50,9 @@
   padding: 1em;
 }
 
-.nav-list .burger {
-  display: inline-block;
-  margin-bottom: 5em;
-  padding: 1em;
-}
-
-.nav-list li:hover,
-.nav-list li:focus {
-  background-color: #dadada;
+.link:hover,
+.link:focus {
+  background-color: rgba(71, 98, 130, 0.4);
 }
 
 li span {

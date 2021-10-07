@@ -6,7 +6,7 @@ const PlannerIcon = () => {
       focusable='false'
       data-prefix='far'
       data-icon='calendar-alt'
-      class='svg-inline--fa fa-calendar-alt fa-w-14'
+      className='svg-inline--fa fa-calendar-alt fa-w-14'
       role='img'
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 448 512'>
