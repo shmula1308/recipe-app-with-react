@@ -3,14 +3,15 @@ import logo from "../../assets/salad.png";
 import { Route, NavLink } from "react-router-dom";
 import classes from "./DesktopNavigation.module.css";
 
-import ChevronLeft from "../../svg/ChevronLeft";
 import HomeIcon from "../../svg/HomeIcon";
 import PlannerIcon from "../../svg/PlannerIcon";
 import ShoppingListIcon from "../../svg/ShoppingListIcon";
 import NewRecipeIcon from "../../svg/NewRecipeIcon";
 import SettingsIcon from "../../svg/SettingsIcon";
 
-const DesktopNavigation = () => {
+const DesktopNavigation = (props) => {
+  // let navClasses = props.showSideNav ? classes.nav : classes.hideNav;
+
   return (
     <div>
       <nav className={classes.nav}>
@@ -53,7 +54,6 @@ const DesktopNavigation = () => {
             <NavLink className={classes.link} to='settings'>
               <SettingsIcon />
               <span>Settings</span>
-              {/* <ChevronLeft /> */}
             </NavLink>
           </li>
         </ul>

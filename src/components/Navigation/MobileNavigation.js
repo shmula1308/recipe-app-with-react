@@ -9,7 +9,11 @@ import SettingsIcon from "../../svg/SettingsIcon";
 
 import classes from "./MobileNavigation.module.css";
 
-const MobileNavigation = () => {
+const MobileNavigation = (props) => {
+  // let navClasses = !props.showMobileNav
+  //   ? classes["mobile-nav"]
+  //   : `${classes["mobile-nav"]} ${classes.showNav}`;
+
   return (
     <div className={classes["mobile-nav"]}>
       <NavLink className={classes.link} to='recipes'>

@@ -3,7 +3,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  display: none;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   height: 60px;
@@ -12,6 +12,10 @@
   background-color: #051e34;
   color: #dde0e3;
 }
+
+/* .showNav {
+  display: flex;
+} */
 
 .link {
   display: flex;

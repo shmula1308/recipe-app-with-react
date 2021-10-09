@@ -1,1 +1,10 @@
+.main {
+  position: absolute;
+  left: 256px;
+  right: 0;
+  height: 100vh;
+}
 
+.main-no-sidenav {
+  position: block;
+}
