@@ -5,6 +5,8 @@
   height: 100vh;
 }
 
-.main-no-sidenav {
-  position: block;
+@media screen and (max-width: 950px) {
+  .main {
+    position: static;
+  }
 }

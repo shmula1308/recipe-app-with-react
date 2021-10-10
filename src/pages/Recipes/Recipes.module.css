@@ -7,11 +7,14 @@
 .title {
   text-align: center;
   color: #051e34;
+  margin: 0;
+  margin-bottom: 1em;
 }
 
 .controls {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2em;
 }
 
 .controls input {
@@ -52,8 +55,9 @@ input::placeholder {
   border: 1px solid #b6c1ce;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 950px) {
   .container {
     width: 100%;
+    margin: 0 auto;
   }
 }

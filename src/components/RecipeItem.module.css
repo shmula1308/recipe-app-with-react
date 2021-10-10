@@ -1,0 +1,48 @@
+.recipe {
+  width: 23%;
+  position: relative;
+  border-radius: 15px;
+  background-color: blue;
+  overflow: hidden;
+  /* margin: 3em 0.5em; */
+  /* margin-left: 8px;
+  margin-right: 8px; */
+  cursor: pointer;
+}
+
+/* .recipe:first-child {
+  margin-left: 0;
+}
+
+.recipe:last-child {
+  margin-right: 0;
+} */
+
+.recipe img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.duration {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 0.8rem;
+}
+
+.button {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  top: 5px;
+  right: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: rgb(196, 194, 194);
+}

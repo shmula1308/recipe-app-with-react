@@ -16,6 +16,7 @@ img {
   color: #fff;
   font-size: 1.4rem;
 }
+
 .nav {
   position: fixed;
   width: 256px;
@@ -32,10 +33,6 @@ img {
   background-size: 256px 556px;
   color: #dde0e3;
 }
-
-/* .hideNav {
-  display: none;
-} */
 
 .nav-list {
   padding: 0;
@@ -54,11 +51,16 @@ img {
   padding: 1em;
 }
 
-.link:hover,
-.link:focus {
+.link:hover {
   background-color: rgba(71, 98, 130, 0.4);
 }
 
 li span {
   margin-left: 0.5em;
+}
+
+@media screen and (max-width: 950px) {
+  .nav {
+    display: none;
+  }
 }

@@ -1,5 +1,7 @@
 import Card from "../../components/UI/Card";
 import SlidersIcon from "../../svg/SlidersIcon";
+import RecipesList from "../../components/RecipesList";
+
 import classes from "./Recipes.module.css";
 
 const Recipes = () => {
@@ -13,7 +15,7 @@ const Recipes = () => {
             <SlidersIcon />
           </button>
         </div>
-        <ul></ul>
+        <RecipesList />
       </Card>
     </div>
   );

@@ -36,3 +36,9 @@
 .link:focus {
   background-color: rgba(71, 98, 130, 0.4);
 }
+
+@media screen and (min-width: 951px) {
+  .mobile-nav {
+    display: none;
+  }
+}
