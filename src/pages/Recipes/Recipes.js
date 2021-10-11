@@ -6,18 +6,16 @@ import classes from "./Recipes.module.css";
 
 const Recipes = () => {
   return (
-    <div className={classes.container}>
-      <Card>
-        <h1 className={classes.title}>Recipes</h1>
-        <div className={classes.controls}>
-          <input type='text' placeholder='Search recipes' />
-          <button type='button'>
-            <SlidersIcon />
-          </button>
-        </div>
-        <RecipesList />
-      </Card>
-    </div>
+    <Card className={classes.container}>
+      <h1 className={classes.title}>Recipes</h1>
+      <div className={classes.controls}>
+        <input type='text' placeholder='Search recipes' />
+        <button type='button'>
+          <SlidersIcon />
+        </button>
+      </div>
+      <RecipesList />
+    </Card>
   );
 };
 

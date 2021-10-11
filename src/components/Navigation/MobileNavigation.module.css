@@ -7,15 +7,11 @@
   justify-content: space-around;
   align-items: center;
   height: 60px;
-  /* padding: 0.8em; */
   font-size: 0.6rem;
   background-color: #051e34;
   color: #dde0e3;
+  z-index: 10;
 }
-
-/* .showNav {
-  display: flex;
-} */
 
 .link {
   display: flex;
@@ -32,8 +28,7 @@
   margin-top: 5px;
 }
 
-.link:hover,
-.link:focus {
+.link:hover {
   background-color: rgba(71, 98, 130, 0.4);
 }
 

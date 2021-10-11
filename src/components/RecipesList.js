@@ -12,6 +12,15 @@ const RecipesList = () => {
       <RecipeItem />
       <RecipeItem />
       <RecipeItem />
+      <RecipeItem />
+      <RecipeItem />
+      <RecipeItem />
+      <RecipeItem />
+      <RecipeItem />
+      <RecipeItem />
+      <RecipeItem />
+      <RecipeItem />
+      <RecipeItem />
     </ul>
   );
 };

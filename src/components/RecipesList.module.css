@@ -3,17 +3,8 @@
   margin: 0;
   list-style-type: none;
   display: flex;
-  /* justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; */
-  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-right: -8px;
+  margin-left: -8px;
+  flex-flow: row wrap;
 }
-
-/* .list {
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1em;
-  background-color: aliceblue;
-} */
