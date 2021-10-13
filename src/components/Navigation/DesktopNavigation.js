@@ -24,25 +24,25 @@ const DesktopNavigation = (props) => {
           </li>
 
           <li className={classes["nav-item"]}>
-            <NavLink className={classes.link} to='recipes'>
+            <NavLink className={classes.link} to='/recipes'>
               <HomeIcon />
               <span>Recipes</span>
             </NavLink>
           </li>
           <li className={classes["nav-item"]}>
-            <NavLink className={classes.link} to='planner'>
+            <NavLink className={classes.link} to='/planner'>
               <PlannerIcon />
               <span>Planner</span>
             </NavLink>
           </li>
           <li className={classes["nav-item"]}>
-            <NavLink className={classes.link} to='shopping-list'>
+            <NavLink className={classes.link} to='/shopping-list'>
               <ShoppingListIcon />
               <span>Shopping List</span>
             </NavLink>
           </li>
           <li className={classes["nav-item"]}>
-            <NavLink className={classes.link} to='new-recipe'>
+            <NavLink className={classes.link} to='/new-recipe'>
               <NewRecipeIcon />
               <span>New Recipe</span>
             </NavLink>

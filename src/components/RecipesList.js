@@ -1,26 +1,20 @@
 import classes from "./RecipesList.module.css";
 import RecipeItem from "./RecipeItem";
 
-const RecipesList = () => {
+const RecipesList = (props) => {
   return (
     <ul className={classes.list}>
-      <RecipeItem />
-      <RecipeItem />
-      <RecipeItem />
-      <RecipeItem />
-      <RecipeItem />
-      <RecipeItem />
-      <RecipeItem />
-      <RecipeItem />
-      <RecipeItem />
-      <RecipeItem />
-      <RecipeItem />
-      <RecipeItem />
-      <RecipeItem />
-      <RecipeItem />
-      <RecipeItem />
-      <RecipeItem />
-      <RecipeItem />
+      {props.recipes.map((recipe) => {
+        return (
+          <RecipeItem
+            key={recipe.id}
+            title={recipe.title}
+            image={recipe.image}
+            duration={recipe.duration}
+            id={recipe.id}
+          />
+        );
+      })}
     </ul>
   );
 };

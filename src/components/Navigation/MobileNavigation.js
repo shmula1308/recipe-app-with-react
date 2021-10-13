@@ -16,23 +16,23 @@ const MobileNavigation = (props) => {
 
   return (
     <div className={classes["mobile-nav"]}>
-      <NavLink className={classes.link} to='recipes'>
+      <NavLink className={classes.link} to='/recipes'>
         <HomeIcon />
         <span>Recipes</span>
       </NavLink>
-      <NavLink className={classes.link} to='planner'>
+      <NavLink className={classes.link} to='/planner'>
         <PlannerIcon />
         <span>Planner</span>
       </NavLink>
-      <NavLink className={classes.link} to='shopping-list'>
+      <NavLink className={classes.link} to='/shopping-list'>
         <ShoppingListIcon />
         <span>Shopping List</span>
       </NavLink>
-      <NavLink className={classes.link} to='new-recipe'>
+      <NavLink className={classes.link} to='/new-recipe'>
         <NewRecipeIcon />
         <span>New Recipe</span>
       </NavLink>
-      <NavLink className={classes.link} to='settings'>
+      <NavLink className={classes.link} to='/settings'>
         <SettingsIcon />
         <span>Settings</span>
       </NavLink>

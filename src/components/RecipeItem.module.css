@@ -1,7 +1,7 @@
 .recipe-item {
-  width: 33.33%;
-  padding-left: 8px;
-  padding-right: 8px;
+  width: calc(33.33% - 16px);
+  margin-left: 8px;
+  margin-right: 8px;
   margin-bottom: 2.5em;
   cursor: pointer;
 }
@@ -74,7 +74,7 @@
 
 @media screen and (min-width: 769px) {
   .recipe-item {
-    width: 25%;
+    width: calc(25% - 16px);
   }
 
   .recipe-thumbnail {

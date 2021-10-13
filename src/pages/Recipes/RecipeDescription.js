@@ -1,8 +1,6 @@
-import Card from "../../components/UI/Card";
-import SlidersIcon from "../../svg/SlidersIcon";
-import RecipesList from "../../components/RecipesList";
+import { useParams } from "react-router-dom";
 
-import classes from "./Recipes.module.css";
+import classes from "./RecipeDescription.module.css";
 
 const DUMMY_RECIPES = [
   {
@@ -49,19 +47,18 @@ const DUMMY_RECIPES = [
   },
 ];
 
-const Recipes = () => {
+const RecipeDescription = (props) => {
+  const params = useParams();
+
+  const recipe = DUMMY_RECIPES.find((recipe) => recipe.id === params.recipeId);
+
   return (
-    <Card className={classes.container}>
-      <h1 className={classes.title}>Recipes</h1>
-      <div className={classes.controls}>
-        <input type='text' placeholder='Search recipes' />
-        <button type='button'>
-          <SlidersIcon />
-        </button>
-      </div>
-      <RecipesList recipes={DUMMY_RECIPES} />
-    </Card>
+    <section>
+      <h1>{recipe.title}</h1>
+      <img src={recipe.image.url} alt={recipe.image.alt} />
+      <p>{recipe.duration}</p>
+    </section>
   );
 };
 
-export default Recipes;
+export default RecipeDescription;

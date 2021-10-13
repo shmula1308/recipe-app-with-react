@@ -1,4 +1,4 @@
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 import DesktopNavigation from "./components/Navigation/DesktopNavigation";
 import MobileNavigation from "./components/Navigation/MobileNavigation";
@@ -10,6 +10,7 @@ import NewRecipe from "./pages/NewRecipe/NewRecipe";
 import Settings from "./pages/Settings/Settings";
 
 import classes from "./App.module.css";
+import RecipeDescription from "./pages/Recipes/RecipeDescription";
 
 function App() {
   return (
@@ -18,8 +19,14 @@ function App() {
       <MobileNavigation />
       <main className={classes.main}>
         <Switch>
-          <Route path='/recipes'>
+          <Route path='/' exact>
+            <Redirect to='/recipes' />
+          </Route>
+          <Route path='/recipes' exact>
             <Recipes />
+          </Route>
+          <Route path='/recipes/:recipeId'>
+            <RecipeDescription />
           </Route>
           <Route path='/planner'>
             <Planner />
