@@ -10,7 +10,7 @@ import NewRecipe from "./pages/NewRecipe/NewRecipe";
 import Settings from "./pages/Settings/Settings";
 
 import classes from "./App.module.css";
-import RecipeDescription from "./pages/Recipes/RecipeDescription";
+import RecipeDetails from "./pages/RecipeDetails/RecipeDetails";
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
             <Recipes />
           </Route>
           <Route path='/recipes/:recipeId'>
-            <RecipeDescription />
+            <RecipeDetails />
           </Route>
           <Route path='/planner'>
             <Planner />
