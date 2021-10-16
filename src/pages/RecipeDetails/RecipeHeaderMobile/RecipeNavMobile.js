@@ -1,6 +1,6 @@
-import LeftArrowIcon from "../../svg/LeftArrowIcon";
-import EditIcon from "../../svg/EditIcon";
-import TrashIcon from "../../svg/TrashIcon";
+import LeftArrowIcon from "../../../svg/LeftArrowIcon";
+import EditIcon from "../../../svg/EditIcon";
+import TrashIcon from "../../../svg/TrashIcon";
 
 import classes from "./RecipeNavMobile.module.css";
 

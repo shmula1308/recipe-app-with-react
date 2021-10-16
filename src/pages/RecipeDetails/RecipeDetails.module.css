@@ -1,35 +1,5 @@
-header {
-  padding: 1em;
-}
-
-.image {
-  width: 100%;
-  height: 250px;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-img {
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.recipe-header {
-  color: #233748;
-}
-
-.recipe-hero {
-}
-
-.title {
-  font-size: 1.6rem;
-  text-align: center;
-  margin: 0;
-  margin-bottom: 1em;
-}
-
-.icon {
-  width: 20px;
+.recipe {
+  width: 95%;
+  max-width: 1024px;
+  margin: 0 auto;
 }

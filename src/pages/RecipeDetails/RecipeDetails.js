@@ -1,7 +1,6 @@
-import { Fragment } from "react";
 import { useParams } from "react-router-dom";
-import ClockIcon from "../../svg/ClockIcon";
-import RecipeNavMobile from "./RecipeNavMobile";
+import RecipeHeaderMobile from "./RecipeHeaderMobile/RecipeHeaderMobile";
+import RecipeHeaderDesktop from "../RecipeDetails/RecipeHeaderDesktop/RecipeHeaderDesktop";
 import classes from "./RecipeDetails.module.css";
 
 const DUMMY_RECIPES = [
@@ -55,30 +54,10 @@ const RecipeDetails = (props) => {
   const recipe = DUMMY_RECIPES.find((recipe) => recipe.id === params.recipeId);
 
   return (
-    <header>
-      <RecipeNavMobile />
-      <div className={classes["recipe-header"]}>
-        <h1 className={classes.title}>Instant Pot Mongolian Chicken</h1>
-        <div className={classes["recipe-hero"]}>
-          <div className={classes.image}>
-            <img src={recipe.image.url} alt={recipe.image.alt} />
-          </div>
-          <p className={classes["recipe-description"]}>
-            Instant Pot Taco Soup is one of the easiest soups to make. This is a variation on an old family
-            favorite. I adapted this to be a pressure cooker taco soup. It's delicious and zesty!
-          </p>
-          <div>
-            <span className={classes["prep-time"]}>
-              <ClockIcon className={classes.icon} />
-              <span className={classes.label}>Prep:</span>10min
-            </span>
-            <span className={classes["cook-time"]}>
-              <span className={classes.label}>Cook:</span>20min
-            </span>
-          </div>
-        </div>
-      </div>
-    </header>
+    <div className={classes.recipe}>
+      {/* <RecipeHeaderMobile recipe={recipe} /> */}
+      <RecipeHeaderDesktop recipe={recipe} />
+    </div>
   );
 };
 

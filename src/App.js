@@ -8,9 +8,9 @@ import Planner from "./pages/Planner/Planner";
 import ShoppingList from "./pages/ShoppingList/ShoppingList";
 import NewRecipe from "./pages/NewRecipe/NewRecipe";
 import Settings from "./pages/Settings/Settings";
+import RecipeDetails from "./pages/RecipeDetails/RecipeDetails";
 
 import classes from "./App.module.css";
-import RecipeDetails from "./pages/RecipeDetails/RecipeDetails";
 
 function App() {
   return (

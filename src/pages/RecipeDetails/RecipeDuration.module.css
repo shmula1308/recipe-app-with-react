@@ -1,0 +1,23 @@
+.icon {
+  width: 20px;
+  margin-right: 0.4em;
+}
+
+.duration {
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #909bab;
+}
+
+.prep-time {
+  display: flex;
+  align-items: center;
+}
+
+.time {
+  color: #23375a;
+  font-weight: 700;
+  margin-left: 0.3em;
+}

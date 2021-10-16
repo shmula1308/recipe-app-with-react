@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  color: #233748;
+}
+
+.image-container {
+  width: 35%;
+  height: 180px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.recipe-image {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.description {
+  width: 62%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.3rem;
+}
