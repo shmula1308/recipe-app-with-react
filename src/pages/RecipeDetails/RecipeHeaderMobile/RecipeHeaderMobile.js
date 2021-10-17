@@ -4,7 +4,11 @@ import classes from "./RecipeHeaderMobile.module.css";
 
 const RecipeHeaderMobile = (props) => {
   return (
-    <header className={classes.header}>
+    <header
+      className={classes.header}
+      style={{
+        display: props.showHeaderMobile ? "block" : "none",
+      }}>
       <RecipeNavMobile />
       <div className={classes["recipe-header"]}>
         <h1 className={classes.title}>Instant Pot Mongolian Chicken</h1>
