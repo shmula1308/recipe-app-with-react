@@ -20,6 +20,7 @@ const RecipeNavMobile = (props) => {
           </button>
         </div>
       </div>
+      <h1 className={classes.title}>Instant Pot Mongolian Chicken</h1>
     </nav>
   );
 };

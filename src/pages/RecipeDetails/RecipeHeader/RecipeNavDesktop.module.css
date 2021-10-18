@@ -1,10 +1,13 @@
 .nav-desktop {
-  width: 25%;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .recipe-actions {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100px;
 }
 .btn {
   width: 34px;
@@ -32,5 +35,12 @@
 }
 
 .title {
+  font-size: 1.2rem;
   margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-desktop {
+    display: flex;
+  }
 }

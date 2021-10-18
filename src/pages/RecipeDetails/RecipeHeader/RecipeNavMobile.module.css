@@ -1,11 +1,12 @@
 .nav-mobile {
   margin-bottom: 1em;
+  color: #233748;
 }
 
 .actions {
   display: flex;
   justify-content: space-between;
-  color: #233748;
+  margin-bottom: 1.5em;
 }
 
 .recipe-actions {
@@ -40,4 +41,11 @@
 
 .title {
   margin: 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-mobile {
+    display: none;
+  }
 }

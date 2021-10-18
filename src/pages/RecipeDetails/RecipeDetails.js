@@ -1,8 +1,5 @@
-import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Card from "../../components/UI/Card";
-import RecipeHeaderMobile from "./RecipeHeaderMobile/RecipeHeaderMobile";
-import RecipeHeaderDesktop from "../RecipeDetails/RecipeHeaderDesktop/RecipeHeaderDesktop";
+import RecipeHeader from "./RecipeHeader/RecipeHeader";
 import classes from "./RecipeDetails.module.css";
 
 const DUMMY_RECIPES = [
@@ -51,30 +48,12 @@ const DUMMY_RECIPES = [
 ];
 
 const RecipeDetails = (props) => {
-  const [windowWidth, setWindowWidth] = useState(0);
   const params = useParams();
-
-  const updateWindowWidth = () => {
-    const windowWidth = window.innerWidth;
-    setWindowWidth(windowWidth);
-  };
-
-  useEffect(() => {
-    updateWindowWidth();
-    window.addEventListener("resize", updateWindowWidth);
-  }, []);
-
   const recipe = DUMMY_RECIPES.find((recipe) => recipe.id === params.recipeId);
-
-  const responsive = {
-    showHeaderDesktop: windowWidth >= 768,
-    showHeaderMobile: windowWidth <= 767,
-  };
 
   return (
     <div className={classes.recipeDetails}>
-      <RecipeHeaderMobile showHeaderMobile={responsive.showHeaderMobile} recipe={recipe} />
-      <RecipeHeaderDesktop showHeaderDesktop={responsive.showHeaderDesktop} recipe={recipe} />
+      <RecipeHeader recipe={recipe} />
     </div>
   );
 };
