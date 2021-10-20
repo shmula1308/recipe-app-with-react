@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import RecipeHeader from "./RecipeHeader/RecipeHeader";
+import RecipeIngredientList from "./RecipeIngredients/RecipeIngredientList";
 import classes from "./RecipeDetails.module.css";
 
 const DUMMY_RECIPES = [
@@ -47,6 +48,129 @@ const DUMMY_RECIPES = [
   },
 ];
 
+const DUMMY_INGREDIENTS = [
+  {
+    name: "Cherry Tomatoes",
+    amount: "500g",
+    notes: "",
+  },
+  {
+    name: "Cinnamon",
+    amount: "2T",
+    notes: "Ceylon Type",
+  },
+  {
+    name: "Fenugreek",
+    amount: "1t",
+    notes: "",
+  },
+  {
+    name: "Instant Coffe",
+    amount: "1/2t",
+    notes: "Nes Caffe Brand",
+  },
+  {
+    name: "Dark Chocolate",
+    amount: "100g",
+    notes: "Lindt brand preferably",
+  },
+  {
+    name: "Rosemary, fresh",
+    amount: "1t",
+    notes: "",
+  },
+  {
+    name: "Red Wine, Merlot",
+    amount: "15ml",
+    notes: "",
+  },
+  {
+    name: "Green Tea",
+    amount: "2T",
+    notes: "",
+  },
+  {
+    name: "Cherry Tomatoes",
+    amount: "500g",
+    notes: "",
+  },
+  {
+    name: "Cinnamon",
+    amount: "2T",
+    notes: "Ceylon Type",
+  },
+  {
+    name: "Fenugreek",
+    amount: "1t",
+    notes: "",
+  },
+  {
+    name: "Instant Coffe",
+    amount: "1/2t",
+    notes: "Nes Caffe Brand",
+  },
+  {
+    name: "Dark Chocolate",
+    amount: "100g",
+    notes: "Lindt brand preferably",
+  },
+  {
+    name: "Rosemary, fresh",
+    amount: "1t",
+    notes: "",
+  },
+  {
+    name: "Red Wine, Merlot",
+    amount: "15ml",
+    notes: "",
+  },
+  {
+    name: "Green Tea",
+    amount: "2T",
+    notes: "",
+  },
+  {
+    name: "Cherry Tomatoes",
+    amount: "500g",
+    notes: "",
+  },
+  {
+    name: "Cinnamon",
+    amount: "2T",
+    notes: "Ceylon Type",
+  },
+  {
+    name: "Fenugreek",
+    amount: "1t",
+    notes: "",
+  },
+  {
+    name: "Instant Coffe",
+    amount: "1/2t",
+    notes: "Nes Caffe Brand",
+  },
+  {
+    name: "Dark Chocolate",
+    amount: "100g",
+    notes: "Lindt brand preferably",
+  },
+  {
+    name: "Rosemary, fresh",
+    amount: "1t",
+    notes: "",
+  },
+  {
+    name: "Fenugreek",
+    amount: "1t",
+    notes: "",
+  },
+  {
+    name: "Instant Coffe",
+    amount: "1/2t",
+    notes: "Nes Caffe Brand",
+  },
+];
+
 const RecipeDetails = (props) => {
   const params = useParams();
   const recipe = DUMMY_RECIPES.find((recipe) => recipe.id === params.recipeId);
@@ -54,6 +178,7 @@ const RecipeDetails = (props) => {
   return (
     <div className={classes.recipeDetails}>
       <RecipeHeader recipe={recipe} />
+      <RecipeIngredientList ingredients={DUMMY_INGREDIENTS} />
     </div>
   );
 };

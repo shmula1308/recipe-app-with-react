@@ -1,0 +1,35 @@
+.ingredient {
+  display: flex;
+  align-items: center;
+  color: #233748;
+  /* margin-bottom: 1em; */
+
+  padding: 0.5em 0;
+}
+
+.image {
+  width: 30px;
+  height: 30px;
+  background-color: burlywood;
+  border-radius: 50px;
+  margin-right: 1em;
+}
+
+.amount {
+  font-weight: 900;
+  font-size: 0.9rem;
+  margin-right: 0.5em;
+  margin: 0 0.5em 0 0;
+}
+
+.name {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.additional-notes {
+  font-size: 0.8rem;
+  color: #717f94;
+  margin: 0;
+}

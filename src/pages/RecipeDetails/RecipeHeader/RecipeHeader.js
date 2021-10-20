@@ -17,31 +17,33 @@ const RecipeHeader = (props) => {
 
   return (
     <header className={classes.header}>
-      <RecipeNavMobile />
-      <div className={classes["recipe-header"]}>
-        <div className={classes["image-container"]}>
-          <img
-            src={props.recipe.image.url}
-            alt={props.recipe.image.alt}
-            className={classes["recipe-image"]}
-          />
-        </div>
-        <div className={classes["recipe-summary"]}>
-          <RecipeNavDesktop />
-          <p className={classes["recipe-description"]}>
-            {isSeeMore ? descriptionText.slice(0, 150).trim() + "..." : descriptionText}
-            <span className={classes.readMore} onClick={seeMoreHandler}>
-              {isSeeMore ? "See more" : "   See less"}
-            </span>
-          </p>
-          <div className={classes.duration}>
-            <span className={classes["prep-time"]}>
-              <ClockIcon className={classes.icon} />
-              Prep: <span className={classes.time}>10min</span>
-            </span>
-            <span className={classes["cook-time"]}>
-              Cook:<span className={classes.time}>20min</span>
-            </span>
+      <div className={classes["recipe-header-container"]}>
+        <RecipeNavMobile />
+        <div className={classes["recipe-header"]}>
+          <div className={classes["image-container"]}>
+            <img
+              src={props.recipe.image.url}
+              alt={props.recipe.image.alt}
+              className={classes["recipe-image"]}
+            />
+          </div>
+          <div className={classes["recipe-summary"]}>
+            <RecipeNavDesktop />
+            <p className={classes["recipe-description"]}>
+              {isSeeMore ? descriptionText.slice(0, 150).trim() + "..." : descriptionText}
+              <span className={classes.readMore} onClick={seeMoreHandler}>
+                {isSeeMore ? "See more" : "   See less"}
+              </span>
+            </p>
+            <div className={classes.duration}>
+              <span className={classes["prep-time"]}>
+                <ClockIcon className={classes.icon} />
+                Prep: <span className={classes.time}>10min</span>
+              </span>
+              <span className={classes["cook-time"]}>
+                Cook:<span className={classes.time}>20min</span>
+              </span>
+            </div>
           </div>
         </div>
       </div>
