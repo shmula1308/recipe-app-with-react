@@ -1,23 +1,12 @@
 import RecipeIngredient from "./RecipeIngredient";
+import ServingsAndAmountWidget from "./ServingsAndAmountWidget";
 import classes from "./RecipeIngredientList.module.css";
 
 const RecipeIngredientList = (props) => {
   return (
     <div className={classes.ingredients}>
-      <div className={classes["servings-widget"]}>
-        <button type='button' className={classes.btn}>
-          -
-        </button>
-        <span className={classes.servings}> 4 servings</span>
-        <button type='button' className={classes.btn}>
-          +
-        </button>
-      </div>
-      <div className={classes["units-widget"]}>
-        <button type='button' className={classes.btn}>
-          Convert Units
-        </button>
-      </div>
+      <h2 className={classes.title}>Ingredients</h2>
+      <ServingsAndAmountWidget />
       <ul className={classes.list}>
         {props.ingredients.map((ingredient, i) => {
           return (

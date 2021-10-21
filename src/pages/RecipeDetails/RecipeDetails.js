@@ -48,126 +48,150 @@ const DUMMY_RECIPES = [
   },
 ];
 
-const DUMMY_INGREDIENTS = [
+let DUMMY_INGREDIENTS = [
   {
     name: "Cherry Tomatoes",
     amount: "500g",
     notes: "",
+    imageURL: "",
   },
   {
     name: "Cinnamon",
     amount: "2T",
     notes: "Ceylon Type",
+    imageURL: "",
   },
   {
     name: "Fenugreek",
     amount: "1t",
     notes: "",
+    imageURL: "",
   },
   {
-    name: "Instant Coffe",
+    name: "Instant Coffee",
     amount: "1/2t",
     notes: "Nes Caffe Brand",
+    imageURL: "",
   },
   {
     name: "Dark Chocolate",
     amount: "100g",
     notes: "Lindt brand preferably",
+    imageURL: "",
   },
   {
     name: "Rosemary, fresh",
     amount: "1t",
     notes: "",
+    imageURL: "",
   },
   {
     name: "Red Wine, Merlot",
     amount: "15ml",
     notes: "",
+    imageURL: "",
   },
   {
     name: "Green Tea",
     amount: "2T",
     notes: "",
+    imageURL: "",
   },
   {
     name: "Cherry Tomatoes",
     amount: "500g",
     notes: "",
+    imageURL: "",
   },
   {
     name: "Cinnamon",
     amount: "2T",
     notes: "Ceylon Type",
+    imageURL: "",
   },
   {
     name: "Fenugreek",
     amount: "1t",
     notes: "",
+    imageURL: "",
   },
   {
     name: "Instant Coffe",
     amount: "1/2t",
     notes: "Nes Caffe Brand",
+    imageURL: "",
   },
   {
     name: "Dark Chocolate",
     amount: "100g",
     notes: "Lindt brand preferably",
+    imageURL: "",
   },
   {
     name: "Rosemary, fresh",
     amount: "1t",
     notes: "",
+    imageURL: "",
   },
   {
     name: "Red Wine, Merlot",
     amount: "15ml",
     notes: "",
+    imageURL: "",
   },
   {
     name: "Green Tea",
     amount: "2T",
     notes: "",
+    imageURL: "",
   },
   {
     name: "Cherry Tomatoes",
     amount: "500g",
     notes: "",
+    imageURL: "",
   },
   {
     name: "Cinnamon",
     amount: "2T",
     notes: "Ceylon Type",
+    imageURL: "",
   },
   {
     name: "Fenugreek",
     amount: "1t",
     notes: "",
+    imageURL: "",
   },
   {
     name: "Instant Coffe",
     amount: "1/2t",
     notes: "Nes Caffe Brand",
+    imageURL: "",
   },
   {
     name: "Dark Chocolate",
     amount: "100g",
     notes: "Lindt brand preferably",
+    imageURL: "",
   },
   {
     name: "Rosemary, fresh",
     amount: "1t",
     notes: "",
+    imageURL: "",
   },
   {
     name: "Fenugreek",
     amount: "1t",
     notes: "",
+    imageURL: "",
   },
   {
     name: "Instant Coffe",
     amount: "1/2t",
     notes: "Nes Caffe Brand",
+    imageURL: "",
   },
 ];
 

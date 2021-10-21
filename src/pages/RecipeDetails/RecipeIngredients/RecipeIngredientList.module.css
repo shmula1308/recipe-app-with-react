@@ -1,4 +1,5 @@
 .ingredients {
+  padding: 1.5em 1em 0 1em;
   padding-bottom: 4em;
 }
 
@@ -8,7 +9,10 @@
   padding: 0;
   list-style-type: none;
   margin-top: 1em;
-  padding: 1.5em 0 0 1em;
+}
+
+.title {
+  color: #233748;
 }
 
 @media screen and (min-width: 1124px) {
