@@ -1,0 +1,11 @@
+.step-label {
+  margin: 0;
+  color: #909bab;
+  font-weight: 700;
+}
+
+.description {
+  line-height: 1.6;
+  font-size: 0.965rem;
+  font-weight: 500;
+}

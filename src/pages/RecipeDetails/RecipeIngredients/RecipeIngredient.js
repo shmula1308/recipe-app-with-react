@@ -5,6 +5,7 @@ import classes from "./RecipeIngredient.module.css";
 
 const RecipeIngredient = (props) => {
   const [randomColor, setRandomColor] = useState("");
+
   useEffect(() => {
     let color = getRandomColor();
     setRandomColor(color);
@@ -13,7 +14,7 @@ const RecipeIngredient = (props) => {
   return (
     <li className={classes.ingredient}>
       <div className={classes.image} style={{ backgroundColor: randomColor, opacity: 0.4 }}>
-        <img src={props.imageURL} alt={props.alt} />
+        <img src='' alt={props.alt} />
       </div>
       <div className={classes.content}>
         <p className={classes.name}>
