@@ -18,7 +18,7 @@ const RecipeHeader = (props) => {
   return (
     <header className={classes.header}>
       <div className={classes["recipe-header-container"]}>
-        <RecipeNavMobile />
+        <RecipeNavMobile recipeId={props.recipe.id} />
         <div className={classes["recipe-header"]}>
           <div className={classes["image-container"]}>
             <img
@@ -28,7 +28,7 @@ const RecipeHeader = (props) => {
             />
           </div>
           <div className={classes["recipe-summary"]}>
-            <RecipeNavDesktop />
+            <RecipeNavDesktop recipeId={props.recipe.id} />
             <p className={classes["recipe-description"]}>
               {isSeeMore ? descriptionText.slice(0, 150).trim() + "..." : descriptionText}
               <span className={classes.readMore} onClick={seeMoreHandler}>

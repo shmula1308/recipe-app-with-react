@@ -1,5 +1,15 @@
+.step {
+  border-bottom: 1px solid #e4e6ea;
+  padding: 1.5em 1em;
+}
+
+.step:last-child {
+  border-bottom: none;
+}
+
 .step-label {
-  margin: 0;
+  display: block;
+  margin: 0 0 1em 0;
   color: #909bab;
   font-weight: 700;
 }
@@ -8,4 +18,11 @@
   line-height: 1.6;
   font-size: 0.965rem;
   font-weight: 500;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .step {
+    border-bottom: none;
+  }
 }

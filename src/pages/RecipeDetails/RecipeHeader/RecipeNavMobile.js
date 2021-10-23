@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import LeftArrowIcon from "../../../svg/LeftArrowIcon";
 import EditIcon from "../../../svg/EditIcon";
 import TrashIcon from "../../../svg/TrashIcon";
@@ -12,9 +13,11 @@ const RecipeNavMobile = (props) => {
           <LeftArrowIcon className={classes.icon} />
         </button>
         <div className={classes["recipe-actions"]}>
-          <button type='button' className={classes.btn}>
-            <EditIcon className={classes.icon} />
-          </button>
+          <Link style={{ color: "inherit" }} to={`/recipes/${props.recipeId}/edit`}>
+            <button type='button' className={classes.btn}>
+              <EditIcon className={classes.icon} />
+            </button>
+          </Link>
           <button type='button' className={classes.btn}>
             <TrashIcon className={classes.icon} />
           </button>
