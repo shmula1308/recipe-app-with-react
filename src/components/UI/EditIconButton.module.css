@@ -1,15 +1,3 @@
-.nav-desktop {
-  display: none;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.recipe-actions {
-  display: flex;
-  justify-content: space-between;
-  width: 100px;
-}
-
 .btn {
   width: 34px;
   height: 34px;
@@ -33,15 +21,4 @@
 .btn:hover,
 .btn:active {
   background-color: #e4e6ea;
-}
-
-.title {
-  font-size: 1.8rem;
-  margin: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .nav-desktop {
-    display: flex;
-  }
 }

@@ -1,7 +1,6 @@
 import { Link, useHistory } from "react-router-dom";
-
-import EditIcon from "../../../svg/EditIcon";
-import TrashIcon from "../../../svg/TrashIcon";
+import EditIconButton from "../../../components/UI/EditIconButton";
+import TrashIconButton from "../../../components/UI/TrashIconButton";
 
 import classes from "./RecipeNavDesktop.module.css";
 
@@ -13,13 +12,9 @@ const RecipeNavDesktop = (props) => {
       <h1 className={classes.title}>Instant Pot Mongolian Chicken</h1>
       <div className={classes["recipe-actions"]}>
         <Link style={{ color: "inherit" }} to={`/recipes/${props.recipeId}/edit`}>
-          <button type='button' className={classes.btn}>
-            <EditIcon className={classes.icon} />
-          </button>
+          <EditIconButton />
         </Link>
-        <button type='button' className={classes.btn}>
-          <TrashIcon className={classes.icon} />
-        </button>
+        <TrashIconButton />
       </div>
     </nav>
   );

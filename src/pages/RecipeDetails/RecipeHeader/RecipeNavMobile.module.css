@@ -14,34 +14,11 @@
   display: flex;
   justify-content: space-around;
 }
-.btn {
-  width: 34px;
-  height: 34px;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-  color: inherit;
-}
-
-.icon {
-  width: 18px;
-  height: 18px;
-}
-
-.btn:hover,
-.btn:active {
-  background-color: #e4e6ea;
-}
 
 .title {
   margin: 0;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
