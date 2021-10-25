@@ -3,7 +3,10 @@ import classes from "./LeftArrowIconButton.module.css";
 
 const LeftArrowIconButton = (props) => {
   return (
-    <button type='button' className={classes.btn}>
+    <button
+      type='button'
+      className={`${classes.btn} ${props.className ? props.className : ""}`}
+      onClick={props.onClick}>
       <LeftArrowIcon className={classes.icon} />
     </button>
   );

@@ -1,11 +1,39 @@
+.editRecipePage {
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #ffffff;
+  padding: 0;
+  color: #233748;
+}
+
+.link {
+  color: #233748;
+}
+
 .top-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.5em 1.5em;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  transition: 0.3s ease-out;
+}
+
+.sticky {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: rgba(255, 255, 255, 0.975);
 }
 
 .title {
-  color: #051e34;
   margin: 0;
   font-size: 1.5rem;
 }
@@ -19,19 +47,16 @@
   background-color: #13b077;
 }
 
-.editRecipePage {
-  width: 100%;
-  max-width: 1024px;
-  margin: 0 auto;
-  border-radius: 5px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  background-color: #ffffff;
+.recipe {
+  padding: 3.5em 2.5em 6em 2.5em;
 }
 
 @media screen and (min-width: 951px) {
   .editRecipePage {
     margin-top: 4em;
     width: 95%;
-    padding: 2.5em;
+  }
+  .recipe {
+    padding: 3.5em 2.5em 3em 2.5em;
   }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../assets/salad.png";
-import { Route, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import classes from "./DesktopNavigation.module.css";
 
 import HomeIcon from "../../svg/HomeIcon";
@@ -10,8 +10,6 @@ import NewRecipeIcon from "../../svg/NewRecipeIcon";
 import SettingsIcon from "../../svg/SettingsIcon";
 
 const DesktopNavigation = (props) => {
-  // let navClasses = props.showSideNav ? classes.nav : classes.hideNav;
-
   return (
     <div>
       <nav className={classes.nav}>

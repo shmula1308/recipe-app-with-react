@@ -9,6 +9,10 @@
   margin-bottom: 1.5em;
 }
 
+.link {
+  color: #233748;
+}
+
 .recipe-actions {
   width: 20%;
   display: flex;

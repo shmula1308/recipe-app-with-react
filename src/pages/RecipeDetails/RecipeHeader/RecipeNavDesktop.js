@@ -1,12 +1,10 @@
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import EditIconButton from "../../../components/UI/EditIconButton";
 import TrashIconButton from "../../../components/UI/TrashIconButton";
 
 import classes from "./RecipeNavDesktop.module.css";
 
 const RecipeNavDesktop = (props) => {
-  const history = useHistory();
-
   return (
     <nav className={classes["nav-desktop"]}>
       <h1 className={classes.title}>Instant Pot Mongolian Chicken</h1>
