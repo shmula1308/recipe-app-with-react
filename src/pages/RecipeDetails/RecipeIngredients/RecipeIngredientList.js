@@ -1,25 +1,21 @@
 import RecipeIngredient from "./RecipeIngredient";
-import ServingsAndAmountWidget from "./ServingsAndAmountWidget";
 import classes from "./RecipeIngredientList.module.css";
 
 const RecipeIngredientList = (props) => {
+  const styles = `${classes.list} ${props.className}`;
   return (
-    <div className={classes.ingredients}>
-      <h2 className={classes.title}>Ingredients</h2>
-      <ServingsAndAmountWidget />
-      <ul className={classes.list}>
-        {props.ingredients.map((ingredient, i) => {
-          return (
-            <RecipeIngredient
-              key={i}
-              amount={ingredient.amount}
-              name={ingredient.name}
-              notes={ingredient.notes}
-            />
-          );
-        })}
-      </ul>
-    </div>
+    <ul className={styles}>
+      {props.ingredients.map((ingredient, i) => {
+        return (
+          <RecipeIngredient
+            key={i}
+            amount={ingredient.amount}
+            name={ingredient.name}
+            notes={ingredient.notes}
+          />
+        );
+      })}
+    </ul>
   );
 };
 

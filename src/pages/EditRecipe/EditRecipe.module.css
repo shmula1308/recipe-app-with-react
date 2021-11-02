@@ -26,6 +26,7 @@
   width: 100%;
   background-color: rgba(255, 255, 255, 1);
   transition: 0.3s ease-out;
+  z-index: 10;
 }
 
 .sticky {
@@ -71,7 +72,7 @@
 }
 
 .control {
-  margin-bottom: 5em;
+  margin-bottom: 2em;
 }
 
 .control input {
@@ -81,6 +82,7 @@
   border-radius: 3px;
   font-size: 1rem;
   outline: none;
+  transition: all 0.2s ease-out;
 }
 
 .control input:hover,
@@ -92,7 +94,7 @@
   border: 1px solid #3dc795;
 }
 
-.control label {
+.label {
   display: inline-block;
   font-size: 1.3rem;
   font-weight: 600;
@@ -109,11 +111,22 @@
   font-size: 0.9rem;
   border: 1px solid #e4e6ea;
   border-radius: 3px;
+  transition: all 0.2s ease-out;
+  outline: none;
 }
 
 .control textarea::placeholder {
   font-weight: 600;
   color: #909bab;
+}
+
+.control textarea:hover,
+.control textarea:active {
+  border: 1px solid #233748;
+}
+
+.control textarea:focus {
+  border: 1px solid #3dc795;
 }
 
 .image-container {
@@ -123,6 +136,7 @@
   border-radius: 7px;
   overflow: hidden;
   background-color: aliceblue;
+  margin-bottom: 2em;
 }
 
 .recipe-image {
@@ -137,6 +151,11 @@
   width: 100%;
   max-width: 700px;
   margin: auto;
+}
+
+.single-column-list {
+  padding: 0;
+  column-count: 1;
 }
 
 @media screen and (min-width: 951px) {

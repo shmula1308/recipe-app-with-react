@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { DUMMY_RECIPES, DUMMY_INGREDIENTS } from "../../data/Dummy_data";
 import RecipeHeader from "./RecipeHeader/RecipeHeader";
-import RecipeIngredientList from "./RecipeIngredients/RecipeIngredientList";
+import RecipeIngredientsSection from "./RecipeIngredients/RecipeIngredientsSection";
 import RecipeProcedure from "./RecipeProcedure/RecipeProcedure";
 
 import classes from "./RecipeDetails.module.css";
@@ -14,7 +14,7 @@ const RecipeDetails = (props) => {
   return (
     <div className={classes.recipeDetailsPage}>
       <RecipeHeader recipe={recipe} />
-      <RecipeIngredientList ingredients={DUMMY_INGREDIENTS} />
+      <RecipeIngredientsSection ingredients={DUMMY_INGREDIENTS} />
       <RecipeProcedure procedure={recipe.procedure} />
     </div>
   );

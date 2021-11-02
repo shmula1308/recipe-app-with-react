@@ -1,0 +1,15 @@
+.ingredients {
+  padding: 1.5em 1em 0 1em;
+  padding-bottom: 4em;
+  border-bottom: 1px solid #e4e6ea;
+}
+
+.title {
+  color: #233748;
+}
+
+/* @media screen and (min-width: 768px) {
+  .ingredients {
+    border-bottom: none;
+  }
+} */

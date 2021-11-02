@@ -1,5 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { DUMMY_INGREDIENTS } from "../../data/Dummy_data";
+import RecipeIngredientList from "../RecipeDetails/RecipeIngredients/RecipeIngredientList";
 import LeftArrowIconButton from "../../components/UI/LeftArrowIconButton";
 import TrashIconButton from "../../components/UI/TrashIconButton";
 import Button from "../../components/UI/Button";
@@ -31,7 +33,7 @@ const EditRecipe = (props) => {
       <div className={classes.recipe}>
         <form noValidate>
           <div className={classes.control}>
-            <label>Title</label>
+            <label className={classes.label}>Title</label>
             <input type='text' placeholder='Give your recipe a name' />
           </div>
           <div className={classes["image-container"]}>
@@ -40,9 +42,17 @@ const EditRecipe = (props) => {
             <TrashIconButton className={classes["trash-btn"]} />
           </div>
           <div className={classes.control}>
-            <label>Description</label>
+            <label className={classes.label}>Description</label>
             <textarea placeholder='Introduce your recipe, add notes, cooking tips, serving suggestions, etc...' />
           </div>
+          <div className={classes["ingredients-header"]}>
+            <div>
+              <label className={classes.label}>Ingredients</label>
+            </div>
+            <button type='button'>Reorder</button>
+          </div>
+          <span>Tap to edit, swipe to delete</span>
+          <RecipeIngredientList ingredients={DUMMY_INGREDIENTS} className={classes["single-column-list"]} />
         </form>
       </div>
     </div>
