@@ -51,7 +51,6 @@ const EditRecipe = (props) => {
             </div>
             <button type='button'>Reorder</button>
           </div>
-          <span>Tap to edit, swipe to delete</span>
           <RecipeIngredientList ingredients={DUMMY_INGREDIENTS} className={classes["single-column-list"]} />
         </form>
       </div>
