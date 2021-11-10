@@ -5,10 +5,13 @@ import RecipeIngredientList from "../RecipeDetails/RecipeIngredients/RecipeIngre
 import LeftArrowIconButton from "../../components/UI/LeftArrowIconButton";
 import TrashIconButton from "../../components/UI/TrashIconButton";
 import Button from "../../components/UI/Button";
+import Input from "./Input";
+
 import classes from "./EditRecipe.module.css";
 
 const EditRecipe = (props) => {
   const [transparent, setTransparent] = useState(false);
+  const [reorder, setReorder] = useState(false);
   const params = useParams();
 
   useEffect(() => {
@@ -21,6 +24,10 @@ const EditRecipe = (props) => {
     });
   }, []);
 
+  const ingredientReorderHandler = () => {
+    setReorder((prevState) => !prevState);
+  };
+
   return (
     <div className={classes.editRecipePage}>
       <div className={`${classes["top-nav"]} ${transparent ? classes.sticky : ""}`}>
@@ -32,10 +39,7 @@ const EditRecipe = (props) => {
       </div>
       <div className={classes.recipe}>
         <form noValidate>
-          <div className={classes.control}>
-            <label className={classes.label}>Title</label>
-            <input type='text' placeholder='Give your recipe a name' />
-          </div>
+          <Input name='title' label='Title' placeholder='Give your recipe a name' />
           <div className={classes["image-container"]}>
             <img src='#' alt='describe image' className={classes["recipe-image"]} />
             <Button className={classes["btn-secondary"]}>Change image</Button>
@@ -46,10 +50,10 @@ const EditRecipe = (props) => {
             <textarea placeholder='Introduce your recipe, add notes, cooking tips, serving suggestions, etc...' />
           </div>
           <div className={classes["ingredients-header"]}>
-            <div>
-              <label className={classes.label}>Ingredients</label>
-            </div>
-            <button type='button'>Reorder</button>
+            <label className={classes.label}>Ingredients</label>
+            <Button className={classes.reorderBtn} onClick={ingredientReorderHandler}>
+              {reorder ? "Done" : "Reorder"}
+            </Button>
           </div>
           <RecipeIngredientList ingredients={DUMMY_INGREDIENTS} className={classes["single-column-list"]} />
         </form>

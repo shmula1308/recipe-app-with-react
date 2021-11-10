@@ -71,6 +71,12 @@
   background: #ffffff;
 }
 
+.reorderBtn {
+  color: #13b077;
+  font-weight: 700;
+  padding: 0;
+}
+
 .control {
   margin-bottom: 2em;
 }
@@ -98,7 +104,6 @@
   display: inline-block;
   font-size: 1.3rem;
   font-weight: 600;
-  margin-bottom: 0.5em;
 }
 
 .control textarea {
@@ -113,6 +118,7 @@
   border-radius: 3px;
   transition: all 0.2s ease-out;
   outline: none;
+  margin-top: 0.6em;
 }
 
 .control textarea::placeholder {
@@ -158,12 +164,15 @@
   column-count: 1;
 }
 
+.ingredients-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media screen and (min-width: 951px) {
   .editRecipePage {
     margin-top: 4em;
     width: 95%;
   }
-  /* .recipe {
-    padding: 3.5em 2.5em 3em 2.5em;
-  } */
 }
