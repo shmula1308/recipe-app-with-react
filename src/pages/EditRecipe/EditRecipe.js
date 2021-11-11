@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { DUMMY_INGREDIENTS } from "../../data/Dummy_data";
-import RecipeIngredientList from "../RecipeDetails/RecipeIngredients/RecipeIngredientList";
+import EditableIngredientsList from "./EditableIngredientsList/EditableIngredientsList";
 import LeftArrowIconButton from "../../components/UI/LeftArrowIconButton";
 import TrashIconButton from "../../components/UI/TrashIconButton";
 import Button from "../../components/UI/Button";
@@ -55,7 +55,7 @@ const EditRecipe = (props) => {
               {reorder ? "Done" : "Reorder"}
             </Button>
           </div>
-          <RecipeIngredientList ingredients={DUMMY_INGREDIENTS} className={classes["single-column-list"]} />
+          <EditableIngredientsList />
         </form>
       </div>
     </div>

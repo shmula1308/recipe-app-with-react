@@ -1,0 +1,74 @@
+.ingredient {
+  display: flex;
+  align-items: center;
+  color: #233748;
+  padding: 0.5em 0;
+  cursor: pointer;
+}
+
+.image {
+  width: 35px;
+  height: 35px;
+  background-color: burlywood;
+  border-radius: 50px;
+  margin-right: 1em;
+}
+
+.amount {
+  font-weight: 900;
+  font-size: 0.9rem;
+  margin-right: 0.5em;
+  margin: 0 0.5em 0 0;
+}
+
+.name {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.additional-notes {
+  font-size: 0.8rem;
+  color: #717f94;
+  margin: 0;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 51px;
+}
+
+.action input {
+  width: 100%;
+  border: 1px solid #3dc795;
+  padding: 0.7em;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.trashIcon {
+  width: 50%;
+}
+
+.trashBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 35px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #909bab;
+}
+
+.trashBtn:hover,
+.trashBtn:focus {
+  color: #051e34;
+}
