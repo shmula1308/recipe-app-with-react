@@ -1,7 +1,8 @@
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { DUMMY_INGREDIENTS } from "../../data/Dummy_data";
+
 import EditableIngredientsList from "./EditableIngredientsList/EditableIngredientsList";
+import ReordableIngredientsList from "./ReordableIngredientList/ReordableIngredientsList";
 import LeftArrowIconButton from "../../components/UI/LeftArrowIconButton";
 import TrashIconButton from "../../components/UI/TrashIconButton";
 import Button from "../../components/UI/Button";
@@ -55,7 +56,8 @@ const EditRecipe = (props) => {
               {reorder ? "Done" : "Reorder"}
             </Button>
           </div>
-          <EditableIngredientsList />
+          {false && <EditableIngredientsList />}
+          <ReordableIngredientsList />
         </form>
       </div>
     </div>

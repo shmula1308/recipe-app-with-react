@@ -1,6 +1,6 @@
 import { Fragment } from "react";
-import EditableRecipeIngredient from "./EditableRecipeIngredient";
-import classes from "./EditableIngredientsList.module.css";
+import ReordableRecipeIngredient from "./ReordableRecipeIngredient";
+import classes from "./ReordableIngredientsList.module.css";
 import { useState, useEffect } from "react";
 
 let DUMMY_INGREDIENTS = [
@@ -167,10 +167,8 @@ let DUMMY_INGREDIENTS = [
   },
 ];
 
-const EditableIngredientsList = (props) => {
+const ReordableIngredientsList = (props) => {
   const [ingredients, setIngredients] = useState(DUMMY_INGREDIENTS);
-
-
 
   const editIngredientHandler = (id) => {
     setIngredients((prevState) => {
@@ -188,11 +186,10 @@ const EditableIngredientsList = (props) => {
 
   return (
     <Fragment>
-      <span className={classes["edit-instructions"]}>Tap to edit, swipe to delete</span>
       <ul className={classes.list}>
         {ingredients.map((ingredient) => {
           return (
-            <EditableRecipeIngredient
+            <ReordableRecipeIngredient
               key={ingredient.id}
               amount={ingredient.amount}
               name={ingredient.name}
@@ -209,4 +206,4 @@ const EditableIngredientsList = (props) => {
   );
 };
 
-export default EditableIngredientsList;
+export default ReordableIngredientsList;
